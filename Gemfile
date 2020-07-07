@@ -19,6 +19,15 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+#Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins or variables.
+
+# Bootstrap JavaScript depends on jQuery. 
+
+#If you're using Rails 5.1+, add the jquery-rails gem to your Gemfile: 
+gem 'jquery-rails'
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
